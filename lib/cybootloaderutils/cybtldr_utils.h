@@ -17,6 +17,7 @@
 #define CALL_CON __cdecl
 #else
 #define EXTERN extern
+#define CALL_CON
 #endif
 
 /******************************************************************************
@@ -110,13 +111,13 @@
  *    VERSION INFORMATION
  ******************************************************************************
  *
- * Major – Used to indicate binary compatibility.  If a change is incompatible
+ * Major ï¿½ Used to indicate binary compatibility.  If a change is incompatible
  *         in any way with the prior release, the major version number will be
  *         updated.
- * Minor – Used to indicate feature set.  If a new feature or functionality is
+ * Minor ï¿½ Used to indicate feature set.  If a new feature or functionality is
  *         added beyond what was available in a prior release, the this number
  *         will be updated.
- * Patch – Used to indicate very minor fixes.  If the code was modified to fix
+ * Patch ï¿½ Used to indicate very minor fixes.  If the code was modified to fix
  *         a defect or to improve the quality in any way that does not add new
  *         functionality or change APIs this version number will be updated.
  *

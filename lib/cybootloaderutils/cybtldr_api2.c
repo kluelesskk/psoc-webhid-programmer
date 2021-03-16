@@ -31,7 +31,7 @@ int CyBtldr_RunAction(CyBtldr_Action action, const char* file, const unsigned ch
     unsigned char isValid;
     unsigned char isActive;
     unsigned char buffer[MAX_BUFFER_SIZE];
-    char line[MAX_BUFFER_SIZE];
+    unsigned char line[MAX_BUFFER_SIZE];
     unsigned int lineLen;
     int err;
     unsigned char bootloaderEntered = 0;
@@ -41,7 +41,7 @@ int CyBtldr_RunAction(CyBtldr_Action action, const char* file, const unsigned ch
     err = CyBtldr_OpenDataFile(file);
     if (CYRET_SUCCESS == err)
     {
-        err = CyBtldr_ReadLine(&lineLen, line);
+        err = CyBtldr_ReadLine(&lineLen, (char*)line);
         if (CYRET_SUCCESS == err)
             err = CyBtldr_ParseHeader(lineLen, line, &siliconId, &siliconRev, &chksumtype);
 
@@ -86,7 +86,7 @@ int CyBtldr_RunAction(CyBtldr_Action action, const char* file, const unsigned ch
                     break;
                 }
 
-                err = CyBtldr_ReadLine(&lineLen, line);
+                err = CyBtldr_ReadLine(&lineLen, (char*)line);
                 if (CYRET_SUCCESS == err)
                     err = CyBtldr_ParseRowData(lineLen, line, &arrayId, &rowNum, buffer, &bufSize, &checksum);
                 if (CYRET_SUCCESS == err)

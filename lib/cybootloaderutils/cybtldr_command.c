@@ -444,7 +444,7 @@ int CyBtldr_ParseSetActiveAppCmdResult(unsigned char* cmdBuf, unsigned long cmdS
 //Used to generate useful error messages. return 1 on success 0 otherwise.
 int CyBtldr_TryParseParketStatus(unsigned char* packet, int packetSize, unsigned char* status)
 {
-    unsigned short dataSize;
+    unsigned short dataSize = 0;
     unsigned short readChecksum = packet[dataSize + 4] | (packet[dataSize + 5] << 8);
     unsigned short computedChecksum = CyBtldr_ComputeChecksum(packet, BASE_CMD_SIZE + dataSize - 3);
 	
