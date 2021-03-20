@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programmer Test</title>
+</head>
+
+<body>
+    <script src="cybtldr.js"></script>
+    <script>
+        async function handleOpen(files) {
+            await bootloadable.loadFile(files[0]);
+        }
+        async function handleProgram() {
+            let deviceFilter = {vendorId: 0x04b4, productId: 0xf13b};
+            if (await bootloadable.findDevice(deviceFilter)) {
+                let status = await bootloadable.program();
+                console.log('Program status code', status);
+            } else {
+                console.log('No device was found');
+            }
+        }
+    </script>
+    <input type="file" onChange="handleOpen(this.files)" />
+    <p>
+    <button onClick="handleProgram()" >Program</button>
+</body>
+</html>

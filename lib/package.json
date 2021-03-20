@@ -1,0 +1,8 @@
+{
+  "name": "cybtldr-lib",
+  "version": "0.1.0",
+  "description": "PSoC Bootloadable Programming Library",
+  "main": "cybtldr.js",
+  "author": "kluelesskk",
+  "license": "MIT"
+}
