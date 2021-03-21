@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/psoc-webhid-programmer/static/css/main.bfa22019.chunk.css",
-    "main.js": "/psoc-webhid-programmer/static/js/main.5903f7a7.chunk.js",
-    "main.js.map": "/psoc-webhid-programmer/static/js/main.5903f7a7.chunk.js.map",
+    "main.js": "/psoc-webhid-programmer/static/js/main.be27a14b.chunk.js",
+    "main.js.map": "/psoc-webhid-programmer/static/js/main.be27a14b.chunk.js.map",
     "runtime-main.js": "/psoc-webhid-programmer/static/js/runtime-main.9d33ebd3.js",
     "runtime-main.js.map": "/psoc-webhid-programmer/static/js/runtime-main.9d33ebd3.js.map",
-    "static/js/2.f8670a08.chunk.js": "/psoc-webhid-programmer/static/js/2.f8670a08.chunk.js",
-    "static/js/2.f8670a08.chunk.js.map": "/psoc-webhid-programmer/static/js/2.f8670a08.chunk.js.map",
+    "static/js/2.9a78aa36.chunk.js": "/psoc-webhid-programmer/static/js/2.9a78aa36.chunk.js",
+    "static/js/2.9a78aa36.chunk.js.map": "/psoc-webhid-programmer/static/js/2.9a78aa36.chunk.js.map",
     "index.html": "/psoc-webhid-programmer/index.html",
     "static/css/main.bfa22019.chunk.css.map": "/psoc-webhid-programmer/static/css/main.bfa22019.chunk.css.map",
-    "static/js/2.f8670a08.chunk.js.LICENSE.txt": "/psoc-webhid-programmer/static/js/2.f8670a08.chunk.js.LICENSE.txt"
+    "static/js/2.9a78aa36.chunk.js.LICENSE.txt": "/psoc-webhid-programmer/static/js/2.9a78aa36.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9d33ebd3.js",
-    "static/js/2.f8670a08.chunk.js",
+    "static/js/2.9a78aa36.chunk.js",
     "static/css/main.bfa22019.chunk.css",
-    "static/js/main.5903f7a7.chunk.js"
+    "static/js/main.be27a14b.chunk.js"
   ]
 }
